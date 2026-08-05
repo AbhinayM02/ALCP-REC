@@ -2,7 +2,7 @@ class Solution {
 public:
     bool hasCycle(ListNode *head){
         ListNode *h=head,*t=head;
-        while(h!=NULL and h->next!=NULL){
+        while(h!=NULL && h->next!=NULL){
             h = h->next->next;
             t = t->next;
             if(h == t){
